@@ -72,9 +72,6 @@ public:
 
         String s;
 
-        s << getColourIntialisationCode (component, memberVariableName)
-          << '\n';
-
         code.constructorCode += s;
     }
 };

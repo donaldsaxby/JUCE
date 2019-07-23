@@ -140,8 +140,7 @@ struct SliderHandler  : public ComponentTypeHandler
           << memberVariableName << "->setTextBoxStyle (Slider::"
           << textBoxPosToString (s->getTextBoxPosition())
           << ", " << CodeHelpers::boolLiteral (! s->isTextBoxEditable())
-          << ", " << s->getTextBoxWidth() << ", " << s->getTextBoxHeight() << ");\n"
-          << getColourIntialisationCode (component, memberVariableName);
+          << ", " << s->getTextBoxWidth() << ", " << s->getTextBoxHeight() << ");\n";
 
         if (needsSliderListener (component))
             r << memberVariableName << "->addListener (this);\n";

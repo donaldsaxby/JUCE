@@ -92,9 +92,6 @@ public:
     void fillInCreationCode (GeneratedCode& code, Component* component, const String& memberVariableName) override
     {
         ButtonHandler::fillInCreationCode (code, component, memberVariableName);
-
-        code.constructorCode << getColourIntialisationCode (component, memberVariableName)
-                             << '\n';
     }
 
 private:

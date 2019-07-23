@@ -87,10 +87,7 @@ public:
 
         if (tb->getToggleState())
             s << memberVariableName << "->setToggleState (true, dontSendNotification);\n";
-
-        s << getColourIntialisationCode (component, memberVariableName)
-          << '\n';
-
+		
         code.constructorCode += s;
     }
 

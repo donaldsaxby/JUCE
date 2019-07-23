@@ -518,26 +518,6 @@ void ComponentTypeHandler::addColourProperties (Component* component,
                                                   true));
 }
 
-String ComponentTypeHandler::getColourIntialisationCode (Component* component,
-                                                         const String& objectName)
-{
-    String s;
-
-    for (int i = 0; i < colours.size(); ++i)
-    {
-        if (component->isColourSpecified (colours[i]->colourId))
-        {
-            s << objectName << "->setColour ("
-              << colours[i]->colourIdCode
-              << ", "
-              << CodeHelpers::colourToCode (component->findColour (colours[i]->colourId))
-              << ");\n";
-        }
-    }
-
-    return s;
-}
-
 //==============================================================================
 void ComponentTypeHandler::fillInGeneratedCode (Component* component, GeneratedCode& code)
 {

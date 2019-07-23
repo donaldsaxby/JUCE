@@ -96,11 +96,8 @@ public:
               << CodeHelpers::justificationToCode (g->getTextLabelPosition())
               << ");\n";
         }
-
-        s << getColourIntialisationCode (component, memberVariableName)
-          << '\n';
-
-        code.constructorCode += s;
+	
+		code.constructorCode += s;
     }
 
     void getEditableProperties (Component* component, JucerDocument& document,

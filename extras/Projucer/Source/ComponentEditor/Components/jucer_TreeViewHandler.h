@@ -109,9 +109,6 @@ public:
                 << memberVariableName << "->setDefaultOpenness ("
                 << CodeHelpers::boolLiteral (t->areItemsOpenByDefault()) << ");\n";
         }
-
-        code.constructorCode << getColourIntialisationCode (component, memberVariableName);
-        code.constructorCode << "\n";
     }
 
 private:

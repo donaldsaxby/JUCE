@@ -139,8 +139,7 @@ public:
           << memberVariableName << "->setEditable ("
           << CodeHelpers::boolLiteral (l->isEditableOnSingleClick()) << ", "
           << CodeHelpers::boolLiteral (l->isEditableOnDoubleClick()) << ", "
-          << CodeHelpers::boolLiteral (l->doesLossOfFocusDiscardChanges()) << ");\n"
-          << getColourIntialisationCode (component, memberVariableName);
+          << CodeHelpers::boolLiteral (l->doesLossOfFocusDiscardChanges()) << ");\n";
 
         if (needsCallback (component))
             s << memberVariableName << "->addListener (this);\n";

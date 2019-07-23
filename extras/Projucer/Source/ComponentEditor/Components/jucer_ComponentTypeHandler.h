@@ -83,9 +83,6 @@ public:
                               JucerDocument& document,
                               Array<PropertyComponent*>& props);
 
-    String getColourIntialisationCode (Component* component,
-                                       const String& objectName);
-
     //==============================================================================
     virtual Component* createNewComponent (JucerDocument*) = 0;
 

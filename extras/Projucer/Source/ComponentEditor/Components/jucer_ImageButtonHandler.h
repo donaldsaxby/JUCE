@@ -134,10 +134,7 @@ public:
         ImageButton* const ib = dynamic_cast<ImageButton*> (component);
 
         String s;
-
-        s << getColourIntialisationCode (component, memberVariableName)
-          << '\n';
-
+	
         const String indent (String::repeatedString (" ", memberVariableName.length() + 13));
 
         s << memberVariableName << "->setImages (false, true, "
